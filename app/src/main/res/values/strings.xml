@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScheduleManager</string>
+    <string name="nav_draw_open">open drawer</string>
+    <string name="nav_draw_close">close drawer</string>
+</resources>
