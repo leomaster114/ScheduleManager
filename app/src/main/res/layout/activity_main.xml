@@ -14,170 +14,10 @@
         android:gravity="center_vertical"
         android:layout_margin="16dp"
         tools:context=".MainActivity">
-        <TextView
-            android:text="Môn học hiện tại"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="#000"
+        <FrameLayout
+            android:id="@+id/frame_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:id="@+id/imgv"
-            android:layout_marginVertical="10dp"
-            android:layout_gravity="center_horizontal"
-            android:visibility="gone"
-            android:layout_width="120dp"
-            android:layout_height="120dp"/>
-        <RelativeLayout
-            android:background="#00BCD4"
-            android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:id="@+id/ll_mh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/tv_lb_name"
-                    android:text="Môn Học:"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/tv_name"
-                    android:text="Lập trình Java"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_room"
-                android:layout_below="@+id/ll_mh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/tv_lb_room"
-                    android:text="Phòng Học:"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/tv_room"
-                    android:text="303-A2"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_gv"
-                android:layout_below="@+id/ll_room"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/tv_lb_gv"
-                    android:text="Giảng viên:"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/tv_gv"
-                    android:text="Nguyễn Mạnh Sơn"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_st"
-                android:layout_below="@+id/ll_gv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/tv_lb_st"
-                    android:text="Giờ bắt đầu:"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/tv_st"
-                    android:text="9:00"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-            <LinearLayout
-            android:id="@+id/ll_et"
-            android:layout_below="@+id/ll_st"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/tv_lb_et"
-                android:text="Giờ kết thúc:"
-                android:textColor="#FFF"
-                android:textSize="@dimen/textSize_subject"
-                android:layout_margin="10dp"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/tv_et"
-                android:text="11:00"
-                android:textColor="#FFF"
-                android:textSize="@dimen/textSize_subject"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_status"
-                android:layout_below="@+id/ll_et"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/tv_lb_status"
-                    android:text="Trạng thái:"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/tv_status"
-                    android:text="Chưa điểm danh"
-                    android:textColor="#FFF"
-                    android:textSize="@dimen/textSize_subject"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-        </RelativeLayout>
-        <Button
-            android:id="@+id/btn_dd"
-            android:layout_marginVertical="16dp"
-            android:text="Điểm danh"
-            android:textColor="#FFF"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/custom_button"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"/>
     </LinearLayout>
     <!--menu left-->
     <com.google.android.material.navigation.NavigationView
@@ -244,6 +84,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="Xem lịch sử điểm danh" />
+            <Button
+                android:id="@+id/btn_subject_current"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Môn học hiện tại" />
 
         </LinearLayout>
 
